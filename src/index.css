@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black; /* Set body background color to black */
+  color: white; /* Set default text color to white */
+  text-align: center;}
+
+a {
+  list-style: none;
+  color: rgb(26, 23, 23);
+}
+
+button,
+select {
+  padding: 5px 10px;
+  min-width: 50px;
+  margin: 5px;
+  font-size: 18px;
+}
+
+label {
+  width: 200px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 200px;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+}
+
+nav {
+  background: #10131a; /* Dark background color */
+  color: #ffffff; /* White text color */
+  padding: 10px 20px; /* Add more padding for better spacing */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Slightly stronger box shadow */
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center; /* Align items horizontally */
+}
+
+/* Add styles for links inside the nav */
+nav a {
+  color: #25a4ff; /* Blue link color */
+  text-decoration: none;
+  margin-right: 20px; /* Add some spacing between links */
+}
+
+/* Style the last link without margin to avoid unnecessary spacing */
+nav a:last-child {
+  margin-right: 0;
+}
+
+/* Add styles for a navigation button, if you have one */
+nav button {
+  background: #25a4ff; /* Blue button background color */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+nav button:hover {
+  background: #0e8add;
+}
+
+
+nav li {
+  list-style: none;
+  color: #ffffff; 
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 20px; 
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+.card {
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0px 2px 3px rgb(122, 118, 118);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: #94a7c8;
+  border-radius: 4px;
+}
+
+.storeCard h3::after {
+  content: url("https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/icon-expand.png");
+  margin-left: 5px;
+}
+.EditstorePage,
+.Addstore,
+.AddTask,
+.SignupPage,
+.LoginPage {
+  background: #f9eec3;
+  border: 1px solid grey;
+  box-shadow: 0px 2px 3px grey;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+
+}
+
+.EditstorePage {
+  background-color: #efff88;
+}
+
+.SignupPage,
+.LoginPage {
+  background-color: #608dd5;
+}
+
+.LoginPage {
+  background-color: #7798d2;
+}
+.EditstorePage form,
+.AddTask form,
+.Addstore form,
+.SignupPage form,
+.LoginPage form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AddTask button,
+.Addstore button {
+  display: block;
+}
+
+.TaskCard {
+  background-color: #8395a1;
+}
+
+
+/* Global styles (applicable to all pages) */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* StoreListPage styles */
+.StoreListPage {
+  padding: 20px;
+}
+
+.StoreListPage h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #007bff; /* Blue header color */
+}
+
+.StoreListPage ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.StoreListPage li {
+  margin-bottom: 10px;
+}
+
+.StoreListPage a {
+  text-decoration: none;
+  color: #007bff; /* Blue link color */
+}
+
+.StoreListPage a:hover {
+  text-decoration: underline;
+}
+
+/* RequestStorePage styles */
+.RequestStorePage {
+  padding: 20px;
+}
+
+.RequestStorePage h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff5733; /* Orange header color */
+}
+.StoreListPage label
+.RequestStorePage label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.RequestStorePage input[type="text"],
+.RequestStorePage input[type="email"],
+.RequestStorePage textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.RequestStorePage textarea {
+  resize: vertical;
+}
+:storeListPage button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5733; /* Orange button color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;  
+}
+.RequestStorePage button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5733; /* Orange button color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+.StoreListPage button:hover {
+  background-color: #e64d00; /* Darker orange on hover */
+}
+.RequestStorePage button:hover {
+  background-color: #e64d00; /* Darker orange on hover */
+}
+
+/* DeliveryPage styles */
+.DeliveryPage {
+  padding: 20px;
+}
+
+.DeliveryPage h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #4CAF50; /* Green header color */
+}
+
+.DeliveryPage p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.DeliveryPage .success-message {
+  color: #4CAF50;
+  font-weight: bold;
+}
